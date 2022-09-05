@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*before,
+*after {
+    box-sizing: inherit;
+}
+
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --dark-grey: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --light-grey: hsl(0, 0%, 81%);
+    --light-blue: hsl(210, 46%, 95%);
+    --violet-50: hsl(263, 50%, 70%);
+}
+
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: var(--light-blue);
+}
+
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+
+.card {
+    padding: 2.05rem;
+    border-radius: 0.6625rem;
+    margin-top: 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+}
+
+.card1 {
+    background-color: var(--violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem top;
+    color: white;
+}
+
+.card2 {
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+.card4 {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.card-name-photo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    border-radius: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.card-opinion-jobTitle {
+    opacity: 50%;
+    font-size: 0.6625rem;
+    margin-top: 1px;
+}
+
+
+.card-opinion-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+    margin-bottom: 1rem;
+}
+
+.card-opinion-text {
+    padding-right: 0.95rem;
+    line-height: 1.15rem;
+    opacity: 50%;
+    font-weight: 500;
+}
+
+
+.img-border1 {
+    border: 2px solid var(--violet-50);
+}
+
+.img-border2 {
+    border: 2px solid var(--violet);
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 1200px;
+        height: 640px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-side {
+        flex-basis: 75%;
+        margin: 0;
+        padding: 0;
+    }
+    .right-side {
+        display: flex;
+        flex-basis: 25%;
+        flex-direction: row;
+
+    }
+
+    .top {
+        display: flex;
+    }
+
+    .bottom {
+        display: flex;
+    }
+
+    .card {
+        margin: 1rem;
+    }
+    
+    .card1 {
+        flex-basis: 66.66%;
+    }
+    .card2 {
+        flex-basis: 33.33%;
+    }
+    .card3 {
+        flex-basis: 33.33%;
+    }
+    .card4 {
+        flex-basis: 66.66%;
+    }
+    .card5 {
+        margin-bottom: 0rem ;
+    }
+    
+
+    
+
+}
